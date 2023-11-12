@@ -90,7 +90,7 @@ if __name__ == '__main__':
                     print(item)
 
         elif user_input == '4':
-            record = input('Введите название вакансии для удаления: ')
+            record = input('Введите название вакансии для удаления\nили нажмите Enter для полного удаления: ')
             jsonsaver = JsonSaver('file.txt')
             jsonsaver.delete_vacancy(record)
             print('Запись удалена')
